@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!-- saved from url=(0016)http://localhost -->
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <title>owtUML</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #content-info{
+            width: auto;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #author-info{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        #title{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding-top: 10px;
+            margin-bottom: 2px;
+            font-size: 34px;
+            color: #505050;
+        }
+        .text{
+            white-space:nowrap;
+            text-overflow: ellipsis;
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 2px;
+            font-size: 20px;
+            color: #8c8c8c;
+        }
+        #navBar{
+            position: fixed;
+            right:0;
+            bottom: 0;
+            background-color: #f0f3f4;
+            overflow-y: auto;
+            text-align: center;
+        }
+        #svg-container{
+            width: 100%;
+            min-width: 0;
+            margin: 0 10px;
+        }
+        #nav-thumbs{
+            padding: 0 5px;
+        }
+        .nav-thumb{
+            position: relative;
+            margin: 10px auto;
+        }
+        .nav-thumb >p{
+            text-align: center;
+            font-size: 12px;
+            margin: 4px 0 0 0;
+        }
+        .nav-thumb >div{
+            position: relative;
+            display: inline-block;
+            border: 1px solid #c6cfd5;
+        }
+        .nav-thumb img{
+            display: block;
+        }
+        .nav-thumb span{
+            pointer-events: none;
+        }
+        #main-content{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #d0cfd8;
+            display: flex;
+            height: auto;
+            flex-flow: row wrap;
+            text-align:center;
+        }
+        #svg-container >svg{
+            display: block;
+            margin:10px auto;
+            margin-bottom: 0;
+        }
+        #copyright{
+            bottom: 0;
+            left: 50%;
+            margin: 5px auto;
+            font-size: 16px;
+            color: #515151;
+        }
+        #copyright >a{
+            text-decoration: none;
+            color: #77C;
+        }
+        .number{
+            position: absolute;
+            top:0;
+            left:0;
+            border-top:22px solid #76838f;
+            border-right: 22px solid transparent;
+        }
+        .pagenum{
+            font-size: 12px;
+            color: #fff;
+            position: absolute;
+            top: -23px;
+            left: 2px;
+        }
+        #navBar::-webkit-scrollbar{
+            width: 8px;
+            background-color: #f5f5f5;
+        }
+        #navBar::-webkit-scrollbar-track{
+            -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.3);
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        #navBar::-webkit-scrollbar-thumb{
+            border-radius: 8px;
+            -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.3);
+            background-color: #6b6b70;
+        }
+        #navBar::-webkit-scrollbar-thumb:hover{
+            background-color: #4a4a4f;
+        }
+        .nav-thumb >div:hover{
+            box-shadow:1px 1px 4px rgba(0,0,0,.4);
+        }
+        .selected .number{
+            border-color: #08a1ef transparent;
+        }
+</style>
+  </head>
+  <body>
+    <div id="main-area">
+      <div id="content-info">
+        <div id="title">owtUML</div>
+        <div id="author-info">
+          <div id="author-name" class="text">xyk</div>
+          <div id="share-time" class="text">2019-06-27</div>
+        </div>
+      </div>
+      <div id="main-content">
+        <div id="svg-container"><svg preserveAspectRadio="xMinYMin meet" id="page1" viewBox="0 0 1123 2381" xmlns:xlink="http://www.w3.org/1999/xlink" width="1122" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" height="2381"><style type="text/css"><![CDATA[
+.st3 {fill:#1f6391;font-family:宋体;font-size:10pt}
+.st5 {fill:#7030a0;font-family:Sans Serif;font-size:9pt}
+.st6 {fill:#7030a0;font-family:宋体;font-size:10pt}
+.st7 {fill:#ff0000;font-weight:bold}
+.st4 {fill:#ffffff;font-family:宋体;font-size:10pt;font-style:italic}
+.st1 {fill:#ffffff;font-family:宋体;font-size:10pt}
+.st2 {font-family:Sans Serif;font-size:9pt}
+]]></style><defs/><rect fill="#ffffff" width="1123" stroke="#808080" x="0" height="2381" y="0"/><g transform="translate(57,133.23)" id="table1"><g><path fill="#3498db" d="M0,0L323.3,0L323.3,55.8L0,55.8L0,0z" stroke="#7e7e7e"/><text class="st1"><tspan class="st2" x="122" y="31.4">FrameSource</tspan></text></g><g><path fill="#e8eff8" d="M0,55.8L323.3,55.8L323.3,129.8L0,129.8L0,55.8z" stroke="#7e7e7e"/><text class="st3"><tspan class="st2" x="13" y="73.8">-list&lt;FrameDestination*> m_audio_dests</tspan><tspan class="st2" x="13" y="88.8">-boost::shared_mutex m_audio_dests_mutex</tspan><tspan class="st2" x="13" y="103.8">-list&lt;FrameDestination*> m_video_dests</tspan><tspan class="st2" x="13" y="118.8">-boost::shared_mutex m_video_dests_mutex</tspan></text></g><g><path fill="#ffffff" d="M0,129.8L323.3,129.8L323.3,263.8L0,263.8L0,129.8z" stroke="#7e7e7e"/><text class="st3"><tspan class="st2" x="13" y="147.8">+FrameSource()</tspan><tspan class="st2" x="13" y="162.8">+~FrameSource()</tspan><tspan class="st2" x="13" y="177.8">+virtual onFeedback(const FeedbackMsg&amp;)</tspan><tspan class="st2" x="13" y="192.8">+addAudioDestination(FrameDestination*)</tspan><tspan class="st2" x="13" y="207.8">+removeAudioDestination(FrameDestination*)</tspan><tspan class="st2" x="13" y="222.8">+addVideoDestination(FrameDestination*)</tspan><tspan class="st2" x="13" y="237.8">+removeVideoDestination(FrameDestination*)</tspan><tspan class="st2" x="13" y="252.8">#deliverFrame(const Frame&amp;)</tspan></text></g></g><g transform="translate(425,47.45)" id="table2"><g><path fill="#3498db" d="M0,0L255,0L255,76.1L0,76.1L0,0z" stroke="#7e7e7e"/><text class="st1"><tspan x="71" y="42.5">FrameDestination</tspan></text></g><g><path fill="#e8eff8" d="M0,76.1L255,76.1L255,120.1L0,120.1L0,76.1z" stroke="#7e7e7e"/><text class="st3"/></g><g><path fill="#ffffff" d="M0,120.1L255,120.1L255,359.1L0,359.1L0,120.1z" stroke="#7e7e7e"/><text class="st3"><tspan class="st2" x="13" y="138.1">+FrameDestination()</tspan><tspan class="st2" x="13" y="153.1">+virtual ~FrameDestination()</tspan><tspan class="st2" x="13" y="168.1">+virtual onFrame(const Frame&amp;)=0</tspan><tspan class="st2" x="13" y="183.1">+virtual onVideoSourceChanged()</tspan><tspan class="st2" x="13" y="198.1">+void setAudioSource(FrameSource*)</tspan><tspan class="st2" x="13" y="213.1">+void unsetAudioSource()</tspan><tspan class="st2" x="13" y="243.1">+void setVideoSource(FrameSource*)</tspan><tspan class="st2" x="13" y="258.1">+void unsetVideoSource()</tspan><tspan class="st2" x="13" y="288.1">+bool hasAudioSource() </tspan><tspan class="st2" x="13" y="303.1">+bool hasVideoSource()</tspan><tspan class="st2" x="13" y="333.1">#void deliverFeedbackMsg(const     </tspan><tspan class="st2" x="13" y="348.1">FeedbackMsg&amp; msg)</tspan></text></g></g><g transform="translate(57,1020.68)" id="table3"><g><path fill="#3498db" d="M0,0L348.3,0L348.3,44.6L0,44.6L0,0z" stroke="#7e7e7e"/><text class="st4"><tspan x="104" y="26.8">RawTransportListener</tspan></text></g><g><path fill="#e8eff8" d="M0,44.6L348.3,44.6L348.3,74L0,74L0,44.6z" stroke="#7e7e7e"/><text class="st3"/></g><g><path fill="#ffffff" d="M0,74L348.3,74L348.3,165.3L0,165.3L0,74z" stroke="#7e7e7e"/><text class="st3"><tspan x="13" y="95">+virtual ~RawTransportListener() </tspan><tspan x="13" y="114">+virtual void onTransportData(char*, int len) = 0</tspan><tspan x="13" y="133">+virtual void onTransportError() = 0</tspan><tspan x="13" y="152">+virtual void onTransportConnected() = 0</tspan></text></g></g><g transform="translate(274,1448.43)" id="table4"><g><path fill="#3498db" d="M0,0L699,0L699,46.6L0,46.6L0,0z" stroke="#7e7e7e"/><text class="st4"><tspan x="276" y="27.8">RawTransportInterface</tspan></text></g><g><path fill="#e8eff8" d="M0,46.6L699,46.6L699,79.6L0,79.6L0,46.6z" stroke="#7e7e7e"/><text class="st3"><tspan x="318" y="67.6">Attributes</tspan></text></g><g><path fill="#ffffff" d="M0,79.6L699,79.6L699,228.6L0,228.6L0,79.6z" stroke="#7e7e7e"/><text class="st3"><tspan class="st2" x="13" y="97.6">+virtual ~RawTransportInterface() </tspan><tspan class="st2" x="13" y="112.6">+virtual void createConnection(const std::string&amp; ip, uint32_t port) = 0</tspan><tspan class="st2" x="13" y="127.6">+virtual void listenTo(uint32_t port) = 0</tspan><tspan class="st2" x="13" y="142.6">+virtual void listenTo(uint32_t minPort, uint32_t maxPort) = 0</tspan><tspan class="st2" x="13" y="157.6">+virtual void sendData(const char*, int len) = 0</tspan><tspan class="st2" x="13" y="172.6">+virtual void sendData(const char* header, int headerLength, const char*    payload, int payloadLength) = 0</tspan><tspan class="st2" x="13" y="187.6">+virtual void close() = 0</tspan><tspan class="st2" x="13" y="217.6">+virtual unsigned short getListeningPort() = 0</tspan></text></g></g><g transform="translate(99,1758)" id="table5"><g><path fill="#3498db" d="M0,0L640.4,0L640.4,51.4L0,51.4L0,0z" stroke="#7e7e7e"/><text class="st1"><tspan x="276" y="30.2">RawTransport</tspan></text></g><g><path fill="#e8eff8" d="M0,51.4L640.4,51.4L640.4,263L0,263L0,51.4z" stroke="#7e7e7e"/><text class="st3"><tspan class="st2" x="13" y="69.4">- struct TransportData</tspan><tspan class="st2" x="13" y="84.4">- bool m_isClosing</tspan><tspan class="st2" x="13" y="99.4">- bool m_tag</tspan><tspan class="st2" x="13" y="114.4">- char m_readHeader[4]</tspan><tspan class="st2" x="13" y="129.4">- size_t m_bufferSize</tspan><tspan class="st2" x="13" y="144.4">- TransportData m_receiveData</tspan><tspan class="st2" x="13" y="159.4">- std::queue&lt;TransportData> m_sendQueue</tspan><tspan class="st2" x="13" y="174.4">- boost::mutex m_sendQueueMutex</tspan><tspan class="st2" x="13" y="189.4">- boost::asio::io_service m_ioService</tspan><tspan class="st2" x="13" y="204.4">- boost::thread m_workThread</tspan><tspan class="st2" x="13" y="219.4">- struct Socket m_socket</tspan><tspan class="st2" x="13" y="234.4">- </tspan><tspan class="st5">RawTransportListener* m_listener</tspan><tspan class="st2" x="13" y="249.4">- uint32_t m_receivedBytes</tspan></text></g><g><path fill="#ffffff" d="M0,263L640.4,263L640.4,604L0,604L0,263z" stroke="#7e7e7e"/><text class="st3"><tspan x="13" y="284">+RawTransport(RawTransportListener* listener, size_t initialBufferSize = 1600, bool tag = true)</tspan><tspan x="13" y="303">+~RawTransport()</tspan><tspan x="13" y="322">+void createConnection(const std::string&amp; ip, uint32_t port)</tspan><tspan x="13" y="341">+void listenTo(uint32_t port)</tspan><tspan x="13" y="360">+void listenTo(uint32_t minPort, uint32_t maxPort)</tspan><tspan x="13" y="379">+void sendData(const char*, int len)</tspan><tspan x="13" y="398">+void sendData(const char* header, int headerLength, const char* payload, int payloadLength)</tspan><tspan x="13" y="417">+void close()</tspan><tspan x="13" y="436">+getListeningPort():unsigned short </tspan><tspan x="13" y="455">-void doSend()</tspan><tspan x="13" y="474">-void receiveData()</tspan><tspan x="13" y="493">-void readHandler(const boost::system::error_code&amp;, std::size_t)</tspan><tspan x="13" y="512">-void readPacketHandler(const boost::system::error_code&amp;, std::size_t)</tspan><tspan x="13" y="531">-void writeHandler(const boost::system::error_code&amp;, std::size_t)</tspan><tspan x="13" y="550">-void connectHandler(const boost::system::error_code&amp;)</tspan><tspan x="13" y="569">-void acceptHandler(const boost::system::error_code&amp;)</tspan><tspan x="13" y="588">-void dumpTcpSSLv3Header(const char*, int len)</tspan></text></g></g><g transform="translate(380.26,331.06)" id="shape6"><path stroke-dasharray="6,4" fill="none" stroke="#2d85c1" d="M0,0L44.7,-14.3"/><path fill="none" stroke="#2d85c1" d="M13.3,2.1L0,0L9.6,-9.4" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/><path fill="none" stroke="#2d85c1" d="M31.5,-16.3L44.7,-14.3L35.1,-4.9" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></g><g transform="translate(66,494.52)" id="table7"><g><path fill="#3498db" d="M0,0L268,0L268,72.5L0,72.5L0,0z" stroke="#7e7e7e"/><text class="st4"><tspan x="69" y="40.7">VideoFrameDecoder</tspan></text></g><g><path fill="#e8eff8" d="M0,72.5L268,72.5L268,105.5L0,105.5L0,72.5z" stroke="#7e7e7e"/><text class="st3"/></g><g><path fill="#ffffff" d="M0,105.5L268,105.5L268,163L0,163L0,105.5z" stroke="#7e7e7e"/><text class="st3"><tspan x="33" y="129.3">+ virtual ~VideoFrameDecoder()</tspan><tspan x="25" y="148.3">+ virtual bool init(FrameFormat)=0</tspan></text></g></g><g transform="translate(218.63,397)" id="shape8"><path fill="none" stroke="#2d85c1" d="M-3.5,18.4L-18.6,97.5"/><path fill="none" stroke="#2d85c1" d="M0,0L-7.1,8.2L-3.5,18.4L3.5,10.2L0,0" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></g><g transform="translate(552.5,406.55)" id="shape9"><path fill="none" stroke="#2d85c1" d="M-18.1,4.5L-352.5,88"/><path fill="none" stroke="#2d85c1" d="M0,0L-10.4,-3L-18.1,4.5L-7.8,7.5L0,0" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></g><g transform="translate(397,494.52)" id="table10"><g><path fill="#3498db" d="M0,0L553.9,0L553.9,51.2L0,51.2L0,0z" stroke="#7e7e7e"/><text class="st4"><tspan x="208" y="30.1">VideoFrameProcesser</tspan></text></g><g><path fill="#e8eff8" d="M0,51.2L553.9,51.2L553.9,86.7L0,86.7L0,51.2z" stroke="#7e7e7e"/><text class="st3"/></g><g><path fill="#ffffff" d="M0,86.7L553.9,86.7L553.9,198.6L0,198.6L0,86.7z" stroke="#7e7e7e"/><text class="st3"><tspan class="st2" x="13" y="104.7">+ virtual ~VideoFrameProcesser()</tspan><tspan class="st2" x="13" y="119.7">+ virtual bool init(FrameFormat format, const uint32_t width, const uint32_t</tspan><tspan class="st2" x="13" y="134.7">                             height, const uint32_t frameRate) = 0</tspan><tspan class="st2" x="13" y="164.7">+ virtual void drawText(const std::string&amp; textSpec) = 0</tspan><tspan class="st2" x="13" y="179.7">+ virtual void clearText() = 0</tspan></text></g></g><g transform="translate(218.63,397)" id="shape11"><path fill="none" stroke="#2d85c1" d="M18.3,3.9L455.3,97.5"/><path fill="none" stroke="#2d85c1" d="M0,0L8,7.2L18.3,3.9L10.3,-3.3L0,0" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></g><g transform="translate(552.5,406.55)" id="shape12"><path fill="none" stroke="#2d85c1" d="M15.2,11L121.5,88"/><path fill="none" stroke="#2d85c1" d="M0,0L4.4,9.9L15.2,11L10.7,1.1L0,0" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></g><g transform="translate(57,829.14)" id="table13"><g><path fill="#3498db" d="M0,0L433.3,0L433.3,44.5L0,44.5L0,0z" stroke="#7e7e7e"/><text class="st4"><tspan x="151" y="26.8">VideoFrameAnalyzer</tspan></text></g><g><path fill="#e8eff8" d="M0,44.5L433.3,44.5L433.3,73.5L0,73.5L0,44.5z" stroke="#7e7e7e"/><text class="st3"/></g><g><path fill="#ffffff" d="M0,73.5L433.3,73.5L433.3,162.9L0,162.9L0,73.5z" stroke="#7e7e7e"/><text class="st3"><tspan class="st2" x="13" y="91.5">+virtual ~VideoFrameAnalyzer() </tspan><tspan class="st2" x="13" y="121.5">+virtual bool init(FrameFormat format, const uint32_t width, const</tspan><tspan class="st2" x="13" y="136.5">                           uint32_t height, const uint32_t frameRate, const</tspan><tspan class="st2" x="13" y="151.5">                           std::string&amp; pluginName) = 0</tspan></text></g></g><g transform="translate(218.63,397)" id="shape14"><path fill="none" stroke="#2d85c1" d="M2.4,18.6L55,432.1"/><path fill="none" stroke="#2d85c1" d="M0,0L-4.2,10L2.4,18.6L6.5,8.6L0,0" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></g><g transform="translate(552.5,406.55)" id="shape15"><path fill="none" stroke="#2d85c1" d="M-10.3,15.6L-278.9,422.6"/><path fill="none" stroke="#2d85c1" d="M0,0L-9.7,4.8L-10.3,15.6L-0.6,10.8L0,0" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></g><g transform="translate(512.79,829.14)" id="table16"><g><path fill="#3498db" d="M0,0L437.2,0L437.2,57.3L0,57.3L0,0z" stroke="#7e7e7e"/><text class="st4"><tspan x="154" y="33.2">VideoFrameEncoder</tspan></text></g><g><path fill="#e8eff8" d="M0,57.3L437.2,57.3L437.2,106.5L0,106.5L0,57.3z" stroke="#7e7e7e"/><text class="st3"/></g><g><path fill="#ffffff" d="M0,106.5L437.2,106.5L437.2,346.9L0,346.9L0,106.5z" stroke="#7e7e7e"/><text class="st3"><tspan class="st2" x="13" y="124.5">+virtual ~VideoFrameEncoder()</tspan><tspan class="st2" x="13" y="154.5">+virtual FrameFormat getInputFormat() = 0</tspan><tspan class="st2" x="13" y="184.5">+virtual bool canSimulcast(FrameFormat, uint32_t width, uint32_t </tspan><tspan class="st2" x="13" y="199.5">height) = 0</tspan><tspan class="st2" x="13" y="229.5">+virtual bool isIdle() = 0</tspan><tspan class="st2" x="13" y="244.5">+virtual int32_t generateStream(uint32_t width, uint32_t height,</tspan><tspan class="st2" x="13" y="259.5">                      uint32_t frameRate, uint32_t bitrateKbps, uint32_t</tspan><tspan class="st2" x="13" y="274.5">                      keyFrameIntervalSeconds, FrameDestination*) = 0</tspan><tspan class="st2" x="13" y="304.5">+virtual void degenerateStream(int32_t streamId) = 0;</tspan><tspan class="st2" x="13" y="319.5">+virtual void setBitrate(unsigned short kbps, int32_t streamId) = 0</tspan><tspan class="st2" x="13" y="334.5">+virtual void requestKeyFrame(int32_t streamId) = 0;</tspan></text></g></g><g transform="translate(552.5,406.55)" id="shape17"><path fill="none" stroke="#2d85c1" d="M7.3,17.2L178.9,422.6"/><path fill="none" stroke="#2d85c1" d="M0,0L-1.3,10.7L7.3,17.2L8.6,6.5L0,0" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></g><g transform="translate(713.85,128.5)" id="table18"><g><path fill="#3498db" d="M0,0L237.1,0L237.1,33L0,33L0,0z" stroke="#7e7e7e"/><text class="st1"><tspan x="76" y="21">FeedbackMsg</tspan></text></g><g><path fill="#e8eff8" d="M0,33L237.1,33L237.1,197L0,197L0,33z" stroke="#7e7e7e"/><text class="st3"><tspan class="st2" x="13" y="51">+FeedbackType type;</tspan><tspan class="st2" x="13" y="66">+FeedbackCmd  cmd;</tspan><tspan class="st2" x="13" y="96">+union {</tspan><tspan class="st2" x="13" y="111">        unsigned short kbps;</tspan><tspan class="st2" x="13" y="126">        struct RtcpPacket{</tspan><tspan class="st2" x="13" y="141">            uint32_t len;</tspan><tspan class="st2" x="13" y="156">            char     buf[128];</tspan><tspan class="st2" x="13" y="171">        } rtcp;</tspan><tspan class="st2" x="13" y="186">    } data</tspan></text></g></g><g transform="translate(512.79,1246)" id="table19"><g><path fill="#3498db" d="M0,0L448,0L448,33L0,33L0,0z" stroke="#7e7e7e"/><text class="st1"><tspan x="192" y="21">InternalIn</tspan></text></g><g><path fill="#e8eff8" d="M0,33L448,33L448,62L0,62L0,33z" stroke="#7e7e7e"/><text class="st6"><tspan class="st2" x="13" y="51">- m_transport : boost::shared_ptr&lt;owt_base::RawTransportInterface></tspan></text></g><g><path fill="#ffffff" d="M0,62L448,62L448,171L0,171L0,62z" stroke="#7e7e7e"/><text class="st3"><tspan x="13" y="83">+ getListeningPort():unsigned int </tspan><tspan x="13" y="102">+ </tspan><tspan class="st7">onFeedback</tspan><tspan>(const FeedbackMsg&amp;):void</tspan><tspan x="13" y="121">+ </tspan><tspan class="st7">onTransportData</tspan><tspan>(char* buf, int len):void </tspan><tspan x="13" y="140">+ onTransportError() :void </tspan><tspan x="13" y="159">+ void onTransportConnected() :void </tspan></text></g></g><g transform="translate(231.13,1186)" id="shape20"><path fill="none" stroke="#2d85c1" d="M16.6,8.6L281.7,145.5"/><path fill="none" stroke="#2d85c1" d="M0,0L5.8,9.1L16.6,8.6L10.8,-0.5L0,0" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></g><g transform="translate(218.63,397)" id="shape21"><path fill="none" stroke="#2d85c1" d="M9.7,16L518.2,849"/><path fill="none" stroke="#2d85c1" d="M0,0L.3,10.8L9.7,16L9.5,5.2L0,0" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></g><g transform="translate(623.5,1677)" id="shape22"><path fill="none" stroke="#2d85c1" d="M-17.4,6.9L-204.3,81"/><path fill="none" stroke="#2d85c1" d="M0,0L-10.7,-1.6L-17.4,6.9L-6.7,8.5L0,0" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></g><g transform="translate(231.13,1186)" id="shape23"><path stroke-dasharray="6,4" fill="none" stroke="#2d85c1" d="M0,0L28,572"/><path fill="none" stroke="#2d85c1" d="M-5.4,12.3L0,0L6.6,11.7" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></g><g transform="translate(624.79,1417)" id="shape24"><path stroke-dasharray="6,4" fill="none" stroke="#2d85c1" d="M0,0L173.5,31.4"/><path fill="none" stroke="#2d85c1" d="M10.7,8L0,0L12.9,-3.8" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/><path fill="none" stroke="#2d85c1" d="M162.7,23.4L173.5,31.4L160.6,35.2" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></g></svg></div>
+        <div id="copyright">Powered by <a href="https://www.edrawsoft.com/" target="_blank" title="edrawsoft">Edraw Max</a></div>
+      </div>
+      <div id="navBar">
+        <div id="nav-thumbs">
+          <div class="nav-thumb">
+            <div>
+              <span class="number">
+                <span class="pagenum">1</span>
+              </span>
+              <a href="#page1">
+                <img src="data:image/png;base64,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"/>
+              </a>
+            </div>
+            <p>页-1</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        const svgs=document.getElementById("svg-container").children;
+        const UA=window.navigator.userAgent;
+        const ua=(UA.indexOf('rv:11')+UA.indexOf('Firefox'))>=0;
+        const svgcount=document.getElementById('svg-container').childElementCount;
+        var styleArr=[];
+        var heightArr=[];
+        var navBar=document.getElementById('navBar');
+        var conInfo=document.getElementById('content-info');
+        for(var i=0;i<svgcount;i++){
+            styleArr[i] = {width:svgs[i].getAttribute('width'),height:svgs[i].getAttribute('height')}
+        }
+        window.onresize=function () {
+            renavstyle();
+            resvgstyle();
+        };
+        window.onscroll=renavstyle;
+        window.onload=function () {
+            renavstyle();
+            var sideWidth=navBar.offsetWidth;
+            document.getElementById('content-info').style.marginRight=sideWidth+'px';
+            document.getElementById('main-content').style.marginRight=sideWidth+'px';
+            resvgstyle();
+            doscroll();
+        };
+        function recontainstyle() {
+            var topHeight=conInfo.clientHeight;
+            var svgHeight=0;
+            for(var i=0;i<svgcount;i++){
+                heightArr[i]=svgs[i].getBoundingClientRect().height+10;
+                svgHeight+=svgs[i].clientHeight ||svgs[i].getBoundingClientRect().height;
+            }
+            var fullHeight=svgHeight+Number(topHeight);
+            if(fullHeight<window.innerHeight){
+            document.getElementById('copyright').style.position='absolute';
+            document.getElementById('copyright').style.transform ='translateX(-50%)';
+            document.getElementById('main-content').style.position='absolute';
+            document.getElementById('main-content').style.top=topHeight+'px';
+        }else{
+            document.getElementById('copyright').style.position='';
+            document.getElementById('copyright').style.transform ='';
+            document.getElementById('main-content').style.position='';
+        }
+        }
+        function resvgstyle() {
+            var sideWidth=navBar.offsetWidth+20;
+            for(var i=0;i<svgcount;i++){
+                var oriWidth = styleArr[i].width;
+                var oriHeight = styleArr[i].height;
+                var percent = oriHeight / oriWidth;
+                var innerWidth=document.body.offsetWidth-sideWidth;
+                if (innerWidth <= oriWidth) {
+                    svgs[i].removeAttribute('width');
+                    svgs[i].removeAttribute('height');
+                    if (ua) {
+                        svgs[i].setAttribute('height',innerWidth*percent);
+                    }
+                }else {
+                    svgs[i].setAttribute('width', oriWidth);
+                    svgs[i].setAttribute('height', oriHeight);
+                }
+            }
+            recontainstyle();
+        }
+        function renavstyle() {
+            var topHeight=conInfo.clientHeight;
+            var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+            if(scrollTop>topHeight){
+                document.getElementById('navBar').style.top=0+'px';
+            }else{
+                document.getElementById('navBar').style.top=topHeight-scrollTop+'px';
+            }
+            doscroll();
+        }
+        function doscroll() {
+            var topHeight=conInfo.clientHeight;
+            var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+            for(var i=0;i<svgcount;i++){
+                var sum=0;
+                for(var j=0;j<=i;j++){
+                    sum+=heightArr[j];
+                }
+                if(scrollTop+window.innerHeight/2-topHeight-sum<0){
+                    var sub=Number(i)+1;
+                    if(document.querySelector('#nav-thumbs .selected')){
+                        document.querySelector('#nav-thumbs .selected').classList.remove('selected');
+                    }
+                    document.querySelector('.nav-thumb:nth-of-type('+sub+')').classList.add('selected');
+                    break;
+                }
+            }
+        }
+        var navs=document.querySelectorAll('.nav-thumb');
+        for(i=0;i<navs.length;i++){
+            navs[i].children[0].onclick=function () {
+                document.querySelector('#nav-thumbs .selected').classList.remove('selected');
+                this.parentNode.classList.add('selected');
+            }
+        }
+</script>
+  </body>
+</html>
