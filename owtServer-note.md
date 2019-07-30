@@ -82,3 +82,5 @@
 >     
 
 `./scripts/build.js -t video-analyzer-sw && ./scripts/pack.js -t analytics-agent && cp ../libmyplugin.so ./dist/analytics_agent/lib/ && ./dist/analytics_agent/install_openh264.sh `
+
+`rm -fr logs/ && ./bin/stop-all.sh && kill -9 $(pidof node) && ./bin/start-all.sh `
